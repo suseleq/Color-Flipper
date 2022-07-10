@@ -1,0 +1,56 @@
+:root {
+    --clr-black: #1C1C1C;
+    --clr-white: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    row-gap: 3rem;
+    place-items: center;
+}
+
+.header {
+    border: solid 0.5rem var(--clr-black);
+    background: var(--clr-black);
+    color: var(--clr-white);
+    border-radius: 0.5rem;
+    min-height: 10vh;
+    min-width: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.change-btn {
+    min-width: 15vh;
+    min-height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:solid 2px var(--clr-black);
+    border-radius: 0.5rem;
+    color: var(--clr-black);
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: transparent;
+}
+
+.change-btn:hover {
+    background: var(--clr-black);
+    color: var(--clr-white);;
+}
